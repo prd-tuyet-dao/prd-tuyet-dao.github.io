@@ -1,28 +1,69 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Nga Widget STG</title>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="Nga Thai" />
+  </head>
+
+  <body>
+    <h1>Environment: STG</h1>
+
+    <table>
+      <tr>
+        <td>Language:</td>
+        <td>
+          <select id="language" onchange="changeLanguage()">
+            <option value="en">English (en)</option>
+            <option value="en-US">English (en-US)</option>
+            <option value="ar">Arabic</option>
+            <option value="he">Hebrew (he)</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Company:</td>
+        <td>ParadoxVN - Nga: Nestlé (UAT)</td>
+      </tr>
+      <tr>
+        <td>Widget name:</td>
+        <td>Candidate Care</td>
+      </tr>
+    </table>
+    
+    <script>
+      function loadLanguage() {
+        var language = localStorage.getItem('lang');
+        if (!language) {
+          language = 'en';
+        }
+        document.documentElement.lang = language;
+        document.getElementById('language').value = language;
+      }
+      loadLanguage();
+      function changeLanguage() {
+        var language = document.getElementById('language').value;
+        localStorage.setItem('lang', language);
+        location.reload();
+      }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type='text/javascript'>
+    var oliviaChatData = oliviaChatData || [];
+    var oliviaChatBaseUrl =  'https://test.paradox.ai';
+    oliviaChatData.push(['setKey', 'hhedzoddxlreqfuprdak']);
+    oliviaChatData.push(['start']);
+    (function() {
+        var apply = document.createElement('script');
+        apply.type = 'text/javascript';
+        apply.async = true;
+        apply.src = 'https://d2cxf26suf1qae.cloudfront.net/static/site/js/widget-client.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(apply, s);
+    })();
+    </script>
+   
+  </body>
 </html>

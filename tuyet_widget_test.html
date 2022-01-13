@@ -50,7 +50,8 @@
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type='text/javascript'>
+    <!-- this is script for test -->
+    <!-- <script type='text/javascript'>
     var oliviaChatData = oliviaChatData || [];
     var oliviaChatBaseUrl =  'https://test.paradox.ai';
     oliviaChatData.push(['setKey', 'hhedzoddxlreqfuprdak']);
@@ -63,6 +64,22 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(apply, s);
     })();
+    </script> -->
+
+     <!-- this is script for dev -->
+    <script type='text/javascript'>
+      var oliviaChatData = oliviaChatData || [];
+      var oliviaChatBaseUrl =  'https://dev2.paradox.ai';
+      oliviaChatData.push(['setKey', 'micsnylowbblrhauuewb']);
+      oliviaChatData.push(['start']);
+      (function() {
+          var apply = document.createElement('script');
+          apply.type = 'text/javascript';
+          apply.async = true;
+          apply.src = 'https://d3thz8gx9tn9hz.cloudfront.net/static/site/js/widget-client.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(apply, s);
+      })();
     </script>
    
   </body>

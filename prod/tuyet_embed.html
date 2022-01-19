@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8" />
 
-  <title>Tuyet Embedded Stg</title>
+  <title>Tuyet Embedded prod</title>
   <meta name="description" content="The HTML5 Herald" />
   <meta name="author" content="Tuyet Dao" />
 </head>
 
 <body>
-  <h1>Environment: stg</h1>
+  <h1>Environment: prod</h1>
 
   <table>
     <tr>
       <td>Company:</td>
-      <td>ParadoxVN - Tuyet Dao Embedded Stg</td>
+      <td>ParadoxVN - Tuyet Dao Embedded prod</td>
     </tr>
     <tr>
       <td>Embedded name:</td>
@@ -26,21 +26,22 @@
 
   <div style="min-width: 400px; min-height: 300px;padding: 0px" id="my-chat-widget"></div>
   div style="min-width: 400px; min-height: 300px;padding: 0px" id="my-chat-widget"></div>
-<script type='text/javascript'>
+  <div style="min-width: 400px; min-height: 300px;padding: 0px" id="my-chat-widget"></div>
+  <script type='text/javascript'>
     var oliviaChatData = oliviaChatData || [];
-    var oliviaChatBaseUrl =  'https://olivia.paradox.ai';
+    var oliviaChatBaseUrl = 'https://olivia.paradox.ai';
     oliviaChatData.push(['setKey', 'vejxmqdpoeiyjwwfjoip']);
     oliviaChatData.push(['setParent', 'my-chat-widget']);
     oliviaChatData.push(['start']);
-    (function() {
-        var apply = document.createElement('script');
-        apply.type = 'text/javascript';
-        apply.async = true;
-        apply.src = 'https://dokumfe7mps0i.cloudfront.net/static/site/js/widget-client.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(apply, s);
+    (function () {
+      var apply = document.createElement('script');
+      apply.type = 'text/javascript';
+      apply.async = true;
+      apply.src = 'https://dokumfe7mps0i.cloudfront.net/static/site/js/widget-client.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(apply, s);
     })();
-</script>
+  </script>
 </body>
 
 </html>
